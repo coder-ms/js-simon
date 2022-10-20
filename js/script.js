@@ -40,7 +40,7 @@ while(numArray.length < numRandom){
 
 }
 console.log(numArray);
-randomNumbers.innerText=(numArray)
+randomNumbers.innerText = (numArray);
 
 function clear (){
     randomNumbers.innerText = '';
