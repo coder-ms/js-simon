@@ -45,7 +45,7 @@ randomNumbers.innerText=(numArray)
 function clear (){
     randomNumbers.innerText = '';
 }
-setTimeout(clear, 3000);
+setTimeout(clear, 5000);
 
 
 // Check se numero e` stato indovinato
