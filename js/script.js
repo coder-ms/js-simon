@@ -51,17 +51,20 @@ setTimeout(clear, 5000);
 // Check se numero e` stato indovinato
 function checkNumber(){
     let numbersByUser = parseInt(numUser.value);
+    // You lost
     if(numUserPutInArr.length == numArray.length){
         arrayWrongFull.innerText = 'All 5 spots are occupied! Pay attention!';
         arrayWrongFull.classList.add('arrayWrongFull');
-
     }
-    else if(numUserPutInArr.length == numArray.length){
-        resultCorrect.innerText = 'All 5 spots are occupied! You win!';
-        resultCorrect.classList.add('resultCorrect');
-    }else{
+    else{
         numUserPutInArr.push(numbersByUser);
     }
+    // You win
+    if(numUserPutInArr.length == numArray.length){
+        resultCorrect.innerText = 'All 5 spots are occupied! You win!';
+        resultCorrect.classList.add('resultCorrect');
+    }
+
 
 
     if(!numArray.includes(numbersByUser)){
